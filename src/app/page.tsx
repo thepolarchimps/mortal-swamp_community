@@ -1,103 +1,48 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function MortalSwampPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-gradient-to-b from-green-50 to-emerald-100 p-8 text-gray-800">
+      <section className="max-w-3xl mx-auto space-y-8">
+        <header className="text-center">
+          <h1 className="text-4xl font-extrabold tracking-tight">Mortal Swamp presents</h1>
+          <h2 className="text-2xl font-light mt-2 italic text-green-800">Locally-Grown AI for Creative and Sustainable Communities</h2>
+        </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="bg-white rounded-2xl shadow-lg p-6 space-y-4">
+          <h3 className="text-xl font-semibold">🌿 The Vision</h3>
+          <p>
+            Imagine AI not as something distant, but something you can speak to down the allotment, at the café, in the youth centre. Mortal Swamp is cultivating community-led AI agents — creative, ethical, and locally tuned to the rhythms of small cities and rural towns like Worcester and Bewdley.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="bg-white rounded-2xl shadow-lg p-6 space-y-4">
+          <h3 className="text-xl font-semibold">⚙️ How It Works</h3>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Agents run locally or in secure small-scale clouds, using open-source models</li>
+            <li>They support creative collaboration, sustainability planning, and local knowledge archiving</li>
+            <li>Each one is co-designed with community groups, artists, educators, or carers</li>
+          </ul>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-lg p-6 space-y-4">
+          <h3 className="text-xl font-semibold">🧭 Why Now</h3>
+          <p>
+            After COVID shifted the tempo of our lives, many of us are seeking slower, more connected, and resilient futures. I was born in 1993, and like many millennials, I&apos;ve spent the last decade exploring ways to work creatively with my community — from Prince&rsquo;s Trust youth projects to designing tools for education, music, and access. This initiative brings that spirit forward, into a world that needs it more than ever.
+          </p>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-lg p-6 space-y-4">
+          <h3 className="text-xl font-semibold">🌞 Pilot Projects & Goals</h3>
+          <ul className="list-disc list-inside space-y-2">
+            <li>A community agent for garden shares, event planning, or skill swaps</li>
+            <li>A creative toolset for local artists and storytellers, powered by AI</li>
+            <li>A local carbon tracker with a playful, embodied interface</li>
+          </ul>
+        </div>
+
+        <div className="text-center text-sm text-gray-500">
+        Jack Barnett · Mortal Swamp · Rooted in the West Midlands · Funding pathways currently being explored (King&rsquo;s Trust + others)
+        </div>
+      </section>
+    </main>
   );
 }
